@@ -1,0 +1,10 @@
+---
+layout: default
+title: Michael Gingras | Questions
+---
+<ul>
+    {% for item in site.data.questions %}
+    <li>{{ item.name }}</li>
+    <p>{{ item.subtext }}</p>
+    {% endfor %}
+</ul>

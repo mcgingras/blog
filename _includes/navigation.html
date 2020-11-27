@@ -1,0 +1,8 @@
+<nav class="nav container py-2">
+    <a href="/">
+        <h1>Michael Gingras</h1>
+    </a>
+    {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="current" {% endif %}>{{ item.name }}</a>
+    {% endfor %}
+</nav>
