@@ -2,9 +2,8 @@
 layout: default
 title: Michael Gingras | Questions
 ---
-<ul>
-    {% for item in site.data.questions %}
-    <li>{{ item.name }}</li>
-    <p>{{ item.subtext }}</p>
-    {% endfor %}
-</ul>
+
+{% for item in site.data.questions %}
+<h3>{{ item.name }}</h3>
+<p>{{ item.subtext }}</p>
+{% endfor %}
