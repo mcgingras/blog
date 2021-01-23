@@ -1,0 +1,11 @@
+---
+layout: default
+title: Michael Gingras | Links
+---
+<ul>
+    {% for item in site.data.links %}
+    <li>
+        <a href="{{ item.link }}">{{ item.name }}</a>
+    </li>
+    {% endfor %}
+</ul>

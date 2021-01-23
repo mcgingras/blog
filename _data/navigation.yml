@@ -1,6 +1,10 @@
 - name: Projects
   link: /projects.html
+- name: Writing
+  link: /writing.html
 - name: Interests
   link: /interests.html
 - name: Questions
   link: /questions.html
+- name: Links
+  link: /links.html

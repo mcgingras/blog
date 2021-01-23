@@ -3,6 +3,6 @@
         <h1>Michael Gingras</h1>
     </a>
     {% for item in site.data.navigation %}
-    <a href="{{ item.link }}">{{ item.name }} {% if page.url == item.link %}<span>&#183;</span>{% endif %}</a>
+    <a href="{{ item.link }}">{{ item.name }} {% if page.url == item.link %}<span>&larr;</span>{% endif %}</a>
     {% endfor %}
 </nav>
