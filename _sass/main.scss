@@ -65,6 +65,18 @@ img{
     padding-bottom: 40px;
 }
 
+.font-bold{
+    font-weight: 700;
+}
+
+.max-w-full{
+    max-width: 100%;
+}
+
+.h-auto{
+    height: auto;
+}
+
 @media only screen and (max-width: 1024px) {
     .nav{
         position: static;
