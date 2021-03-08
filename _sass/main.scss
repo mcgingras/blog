@@ -35,11 +35,27 @@ ul {
     background: red;
 }
 
+.content li a {
+    text-decoration: none;
+    padding: 0;
+    color: #18181B;
+    background: transparent;
+}
+
+.content li a:hover {
+    background-color: transparent;
+}
+
 .content a {
     text-decoration: none;
     color: #7b8989;
     padding: .2rem;
-    background: #ebebeb;
+    background-color: #ebebeb;
+    transition: background-color 300ms;
+}
+
+.content a:hover {
+    background-color: #E6E1FA;
 }
 
 .nav{
