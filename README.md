@@ -1,0 +1,2 @@
+# Blog
+That's all.
