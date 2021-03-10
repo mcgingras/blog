@@ -4,12 +4,11 @@ title:  "Lazy Minting NFTs"
 date:   2021-03-09 23:06:00 -0500
 categories: blog
 ---
-# Lazy Minting NFTs
 ### What is Lazy Minting
-[OpenSea] is an NFT marketplace that supports Lazy Minting. Lazy Minting (sometimes called light minting) enables an NFT creator to “mint” an NFT without actually declaring it’s existence to the main Ethereum blockchain. This is nice for a variety of reason, but the two I am most interested in are
+[OpenSea](https://opensea.io) is an NFT marketplace that supports Lazy Minting. Lazy Minting (sometimes called light minting) enables an NFT creator to “mint” an NFT without actually declaring it’s existence to the main Ethereum blockchain. This is nice for a variety of reason, but the two I am most interested in are
 
-1. It means the NFT is not actually created until there is a buyer. No gas is wasted creating the NFT while it sits in NFT purgatory.
-2. The buyer is the one who pays for the gas. The creator does not have to pay anything to mint the piece. For an artist wanting to create many NFTs this is nice because there is no longer the burden of high fees up front.
+1. The NFT is not actually created until there is a buyer. No gas is wasted.
+2. The buyer is the one who (eventually) pays for the gas.
 
 I am working on a project that would benefit from a “Lazy Minting” like experience. I am minting 1000 NFTs called “cryptocassettes”. I can save the details for another post, but what’s important is that each cassette is unique along a few dimensions (cassette color, tape color, size etc).
 
@@ -30,4 +29,4 @@ By going through this flow, I am able to create “IOUs” with the intent of cr
 
 There is a known issue unfortunately. Let’s say we only want one NFT with a particular set of metadata. It's possible for a bad actor to intercept or even reuse the same signature/metadata combination to continuously mint NFTs with the approved set of metadata. There is currently no way to "expire" a signature as far as I know. Only solution I have to that problem so far is keeping an array of signature indices and including that in the message you sign. When the function gets the message as a param, it can write to the array of signature indices marking it as "used". Then, all prior minting transactions have to make sure the index is unused by reading the array. Unfortunately, this imposes additional costs, so I am experimenting with more elegant solutions.
 
-See my [repo] for implementation details.
+See my [repo](https://github.com/mcgingras/lazy-mint) for implementation details.
