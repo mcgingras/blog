@@ -19,11 +19,10 @@
 # in the templates via {{ site.myvariable }}.
 
 
-email: michael@gearflow.com
+email: mcg79@cornell.edu
+title: Michael Gingras
 description: >- # this means to ignore newlines until "baseurl:"
-  I live in Boston and work at Gearflow.
-  I previously studied CS at Cornell and was many times a fellow at IDEO CoLab.
-  I like competitive things and I run for Full Send Triathlon.
+  Writing, projects, interests and links from Michael's knowledge garden.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://michael-gingras.com" # the base hostname & protocol for your site, e.g. http://example.com
 
