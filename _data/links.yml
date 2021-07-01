@@ -17,3 +17,15 @@
 - name: Signaling as a Service
   link: https://julian.digital/2020/03/28/signaling-as-a-service/
   tag: social
+- name: Browser Engineering
+  link: https://browser.engineering/
+  tag: engineering
+- name: Mighty's Master Plan
+  link: https://blog.mightyapp.com/mightys-secret-plan-to-invent-the-future-of-computing/
+  tag: engineering
+- name: Future of Coding
+  link: https://futureofcoding.org/
+  tag: engineering
+- name: Spatial Software
+  link: https://darkblueheaven.com/spatialsoftware/
+  tag: product
