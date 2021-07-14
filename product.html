@@ -2,10 +2,7 @@
 layout: default
 title: Product
 ---
-<ul>
-    {% for item in site.data.links %}
-    <li>
-        <a class="no-bg" href="{{ item.link }}">{{ item.name }}</a>
-    </li>
-    {% endfor %}
-</ul>
+{% for item in site.data.product %}
+<h4>{{ item.name }}</h4>
+<p class="mb-8">{{ item.subtext }}</p>
+{% endfor %}
