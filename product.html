@@ -1,0 +1,11 @@
+---
+layout: default
+title: Product
+---
+<ul>
+    {% for item in site.data.links %}
+    <li>
+        <a class="no-bg" href="{{ item.link }}">{{ item.name }}</a>
+    </li>
+    {% endfor %}
+</ul>
