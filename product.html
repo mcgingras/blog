@@ -2,7 +2,12 @@
 layout: default
 title: Product
 ---
-{% for item in site.data.product %}
-<h4>{{ item.name }}</h4>
-<p class="mb-8">{{ item.subtext }}</p>
-{% endfor %}
+<ul>
+  {% for post in site.posts %}
+    {% if post.categories contains 'product' %}
+      <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
